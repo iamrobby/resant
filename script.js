@@ -1,5 +1,5 @@
-const button=document.getElementsByClassName("btn");
-button.onclick((e)=>{
-  e.preventDefault();
+const button=document.querySelector("btn");
+button.addEventListner("click",()=>{
+  
   alert("hello");
 });
