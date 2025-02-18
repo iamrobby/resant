@@ -1,0 +1,76 @@
+html {
+    height: 100%;
+    width: 100%;
+    font-family: "Lobster", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #ffd9a3;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four columns of equal width */
+    gap: 5px; /* Optional: Add some space between the grid items */
+}
+
+.food img {
+    width: 100%; /* Make the images responsive */
+    height: auto; /* Maintain the aspect ratio */
+    max-width: 200px; /* Optional: Set a maximum width for the images */
+}
+
+.food {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: 1px solid #ffd9a3;
+    padding: 10px;
+    margin-left: auto;
+    margin-top: 10px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.order-button {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-family: "Lobster", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Media query for tablets (768px and up) */
+@media (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* Two columns of equal width */
+    }
+}
+
+/* Media query for mobile devices (up to 767px) */
+@media (max-width: 767px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Single column */
+    }
+
+    .food img {
+        max-width: 100%; /* Remove the maximum width for images */
+    }
+}

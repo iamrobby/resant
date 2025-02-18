@@ -81,7 +81,10 @@ img {
 h1,
 h4 {
   text-decoration: none;
-  color: #443903
+  color: #443903;
+}
+a{
+   text-decoration: none;
 }
 
 .navitem {
@@ -89,11 +92,33 @@ h4 {
   padding-inline: 5px;
 }
 
-/* .roboto-uniquifier> {
-  font-family: "Roboto", serif;
-  font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-} */
+@media (max-width: 1024px) {
+  img {
+    width: 45vw; /* Adjust width for tablets */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+
+/* Media query for mobile devices (up to 767px) */
+@media (max-width: 767px) {
+  img {
+    width: 90vw; /* Adjust width for mobile devices */
+    height: auto; /* Maintain aspect ratio */
+  }
+  .btn {
+    cursor: pointer;
+    background-color: #544326;
+    border-style: solid;
+    border-color: #544326;
+    padding: 10px;
+    font-size: 30px;
+    font-family: "Lobster", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 150px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    color: #e7dcd0;
+    margin-right: 30px;
+  }
+}
